@@ -8,7 +8,7 @@ export const NavBar = () => {
 <h2>logo comercio</h2>
 
 <nav>    
-    <button><a href="">Inicio</a></button>
+    <button>Inicio</button>
     <button>Notebooks</button>
     <button>Tablets</button>
     <button>Celulares</button>
