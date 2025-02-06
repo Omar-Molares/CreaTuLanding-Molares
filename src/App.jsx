@@ -1,13 +1,22 @@
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import './App.css'
+import { NavBar } from './components/NavBar/NavBar'
 import { ItemListContainer } from './Components/ItemListContainer/ItemListContainer'
-import { NavBar } from './Components/NavBar/NavBar'
+import { ItemDetail } from './components/ItemDetail/ItemDetail'
 
 function App() {
 
   return (
     <>
+    <BrowserRouter>
       <NavBar />
-      <ItemListContainer greeting="Bienvenidos a mi e-commerce"/>
+      <Routes>
+        <Route exact path='/' element={<ItemListContainer/>}/>
+        <Route exact path='/category/:catId' element={<ItemListContainer/>}/>
+        <Route exact path='/product/:id' element={<ItemDetail/>}/>
+        <Route exact path='*' element={ <h2>Not Found Error 404</h2> }/>
+      </Routes>
+    </BrowserRouter>
     </>
   )
 }

@@ -1,0 +1,8 @@
+article { 
+    display: block;  
+    flex-direction: column;
+    flex-grow: 3;
+    border: 1px solid black;
+    width: 50%;
+}
+
