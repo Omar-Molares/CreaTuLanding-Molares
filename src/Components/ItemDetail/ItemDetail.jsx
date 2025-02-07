@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import { getProduct } from '../../../asyncMock';
+import { Count } from '../Count/Count';
 
 export const ItemDetail = () => {
 
@@ -17,10 +18,12 @@ export const ItemDetail = () => {
     <h1>Detalle de Producto</h1>
     <p>ID: {product?.id}</p>
     <h3>Nombre: {product?.name}</h3>
-    <img src={product?.image} alt="" />
+    <img src={product?.img} alt="" />
     <p>Descripcion: {product?.description}</p>
     <p>Categoria: {product?.category}</p>
     <p>Precio ${product?.price}</p>
+
+    <Count/>
         
     </>
   )

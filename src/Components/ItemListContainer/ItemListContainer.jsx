@@ -20,11 +20,12 @@ export const ItemListContainer = () => {
 
   return (
     <>
+    <div>
     <h1>Mis produsctos</h1>
     {products?.map((product) => (
       <ItemCard key={product.id} product={product}/>
     ))}
-    
+    </div>
     </>
   );
 }

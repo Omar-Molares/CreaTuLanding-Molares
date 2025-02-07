@@ -5,7 +5,7 @@ import "./NavBar.css";
 export const NavBar = () => {
   return (
     <header>
-      <Link to="/"><h2>logo comercio</h2></Link>
+      <Link to="/"><img src={"../../public/logito2.png"} alt="" /></Link>
       
 
       <nav>
