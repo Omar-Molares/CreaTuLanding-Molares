@@ -3,6 +3,7 @@ import './App.css'
 import { NavBar } from './components/NavBar/NavBar'
 import { ItemListContainer } from './Components/ItemListContainer/ItemListContainer'
 import { ItemDetail } from './components/ItemDetail/ItemDetail'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
 

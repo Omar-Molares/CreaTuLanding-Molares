@@ -1,5 +1,12 @@
-div {
+.product {
+    display: flex;
+    flex-wrap: wrap;
+        
+}
+
+.body {
     display: flex;
     flex-direction: column;
-    
-}
+    text-align: center;
+    margin-left: 50px;
+    }

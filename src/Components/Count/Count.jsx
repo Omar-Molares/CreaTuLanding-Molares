@@ -1,11 +1,16 @@
+import Button from 'react-bootstrap/Button';
+import "./count.css"
+
+
 
 export const Count = () => {
   return (
 <>
-    <div>
-     <button> - </button>
+    <div className='count'>
+     <Button variant="danger"> - </Button>
      <strong> 1 </strong>
-     <button> + </button>    
+     <Button variant="warning"> + </Button>
+     <Button variant="secondary">Agragar al carrito</Button> 
     </div>
  </>
   )

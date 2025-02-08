@@ -1,21 +1,22 @@
 /* eslint-disable react/prop-types */
 import { Link } from 'react-router-dom';
 import './ItemCard.css';
+import Button from 'react-bootstrap/Button';
 
 
 export const ItemCard = ({ product }) => {
   return (
 <>
-      <article>
+ <article className='prub'>
+      <div className="productCard">
         <h4>{product.name}</h4>
         <img src={product.img} alt="" />
-        <p>{product.description}</p>
-        <p>Stock: {product.stock}</p>
-        <p>Price: $ {product.price}</p>
-        <button>
+        <p>Precio: $ {product.price}</p>
+        <Button variant='secondary'>
           <Link to={`/product/${product.id}`}>Detalles</Link>
-        </button>
-      </article>
+        </Button>
+      </div>
+  </article>
 </>
   )
 }
