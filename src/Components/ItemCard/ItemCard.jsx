@@ -13,7 +13,7 @@ export const ItemCard = ({ product }) => {
         <img src={product.img} alt="" />
         <p>Precio: $ {product.price}</p>
         <Button variant='secondary'>
-          <Link to={`/product/${product.id}`}>Detalles</Link>
+          <Link className='link' to={`/product/${product.id}`}>Detalles</Link>
         </Button>
       </div>
   </article>

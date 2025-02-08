@@ -8,24 +8,24 @@ import { Button } from "react-bootstrap";
 export const NavBar = () => {
   return (
     <header>
-      <Link to="/"><img src={"../../public/logito2.png"} alt="" /></Link>
+      <Link to="/"><img className="imgNav" src={"../../public/logitoo.png"} alt="" /></Link>
       
 
       <nav>
         <Button variant="danger">
-          <Link to="/">Inicio</Link>
+          <Link className="linkNav" to="/">Inicio</Link>
         </Button>
         <Button variant="secondary">
-          <Link to="/category/notebooks">Notebooks</Link>
+          <Link className="linkNav" to="/category/notebooks">Notebooks</Link>
         </Button>
         <Button variant="secondary">
-          <Link to="/category/tablets">Tablets</Link>
+          <Link className="linkNav" to="/category/tablets">Tablets</Link>
         </Button>
         <Button variant="secondary">
-          <Link to="/category/celulares">Celulares</Link>
+          <Link className="linkNav" to="/category/celulares">Celulares</Link>
         </Button>
         <Button variant="secondary">
-          <Link to="/promociones">Promociones</Link>
+          <Link className="linkNav" to="/promociones">Promociones</Link>
         </Button>
       </nav>
 
